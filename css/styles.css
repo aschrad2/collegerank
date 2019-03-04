@@ -3,6 +3,8 @@ body {
   background-color: #f4faff;
 }
 
+/* -------------Links------------- */
+
 a {
   color: inherit;
 }
@@ -11,15 +13,16 @@ a:hover {
   color: #008255 !important;
 }
 
+/* -------------Navbar------------- */
+#main-search {
+  margin-right: 10px;
+}
+
 #navbar {
   background-color: white;
 }
 
-#compare-header {
-  font-weight: 700;
-  margin-bottom: 2%;
-}
-
+/* -------------H1, H2, H3, H4, H5 Styling------------- */
 h1, h2, h3, h4, h5 {
   text-align: center;
 }
@@ -35,20 +38,14 @@ h2 {
   word-spacing: .1em;
 }
 
-#footer-header {
-  text-align: left;
-  margin-left: 30px;
+/* -------------Easily Compare Line's Styling------------- */
+
+#compare-header {
+  font-weight: 700;
+  margin-bottom: 2%;
 }
 
-#footer-list-two {
-  text-align: center;
-  margin-top: -90px;
-  margin-bottom: 30px;
-}
-
-.footer {
-  background-color: #f5f6f7;
-}
+/* -------------College Category Buttons------------- */
 
 .college-category-buttons {
   justify-content: center;
@@ -69,11 +66,6 @@ h2 {
   letter-spacing: .0625em;
   color: #6c7f87;
   background-color: white;
-
-}
-
-#main-search {
-  margin-right: 10px;
 }
 
 .fas {
@@ -100,3 +92,34 @@ h2 {
 .medical-class {
   color: #e9e2e9;
 }
+
+/* -------------Footer------------- */
+
+#footer-list-two {
+  text-align: center;
+  margin-top: -90px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #f5f6f7;
+  margin-top: 100px;
+}
+
+.footer-container {
+  text-align: left;
+  margin-left: 77px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+/* #footer-header {
+  text-align: left;
+  margin-left: 30px;
+} */
