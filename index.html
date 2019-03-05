@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="viewport" content"width=device-width">
   <meta name="description" content="A web application to help you choose your college">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/styles.css" type="text/css" rel="stylesheet">
@@ -11,13 +13,15 @@
   <body>
     <!-- Main Navigation bar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">CollegeRank</a>
+      <a class="navbar-brand" href="index.html">CollegeRank</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-
+          <li class="nav-item">
+            <a class="nav-link" href="college-ranking.html">Full Ranking</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Business</a>
           </li>
@@ -36,14 +40,11 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Engineering</a>
           </li>
-
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search Colleges..." aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" id="main-search" type="submit">Search </button>
           </form>
-
-          <button class="btn btn-outline-success my-2 my-sm-0" placeholder="Login" aria-label="Login">Login</button>
-
+          <a href="signin.html"><button class="btn btn-outline-success my-2 my-sm-0" placeholder="Login" aria-label="Login">Login</button></a>
         </ul>
       </div>
     </nav>
@@ -51,12 +52,10 @@
     <div class="body-info">
       <!-- Center info -->
       <h1>Make all the right college moves.</h1>
-      <h2>Turn to the statistics for objective advice, expert info, helpful tools and so much more</h1>
-
-      </br>
+      <h2>Turn to the statistics for objective advice, expert info, helpful tools and so much more</h2>
+      <br>
       <!-- Button intro   -->
-      <h2 id="compare-header">Easily compare tons of options to find your college</h1>
-
+      <h2 id="compare-header">Easily compare tons of options to find your college</h2>
       <!-- Buttons body  -->
       <div class="college-category-buttons">
         <div>
@@ -98,7 +97,6 @@
     <!-- Footer -->
     <div class="footer">
       <hr>
-
       <div class="footer-left">
         <ul>
           <a href="www.collegeblogresult.com"><ul>College Blog</ul></a>
@@ -106,16 +104,18 @@
           <a href="www.collegehowtochooseamajor.com"><ul>How To Choose a Major</ul></a>
         </ul>
       </div>
-
       <div class="footer-center">
         <ul id="footer-list-two">
           <a href="www.twoyeardegreevs4yeardegree.com"><ul>Community College vs. University</ul></a>
           <a href="www.collegeinstateoroutofstate.com"><ul>In State vs. Out of State</ul></a>
         </ul>
       </div>
-
       <div class="footer-container">
         <span>@2019 CollegeRank, Inc. All Rights Reserved</span>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
+</html>

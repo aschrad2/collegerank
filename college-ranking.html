@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content"width=device-width">
+  <meta name="description" content="A web application to help you choose your college">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"><title>CollegeRank - Find the best college</title>
+  </head>
+  <body>
+    <!-- Main Navigation bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">CollegeRank</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="college-ranking.html">Full Ranking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="college-ranking.html">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Health</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Social Sciences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Psychology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Biology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Engineering</a>
+          </li>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Colleges..." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="main-search" type="submit">Search </button>
+          </form>
+          <button class="btn btn-outline-success my-2 my-sm-0" placeholder="Login" aria-label="Login">Login</button>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- ~~~~~~~~~~~~ Ranking Table ~~~~~~~~~~~~   -->
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">College Rank</th>
+          <th scope="col">Name</th>
+          <th scope="col">Location</th>
+          <th scope="col">Yearly Tuition</th>
+          <th scope="col">Acceptance Rate</th>
+          <th scope="col">City Population</th>
+          <th scope="col">Student Size</th>
+          <th scope="col">Business</th>
+          <th scope="col">Health</th>
+          <th scope="col">Engineering</th>
+          <th scope="col">Extracirriculars</th>
+          <th scope="col">Save?</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Massachusetts Institute of Technology</td>
+          <td>Cambridge, MA</td>
+          <td>$11,900</td>
+          <td>6.1%</td>
+          <td>113,630</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Technology Team</td>
+          <td><button type="button" class="btn btn-primary">Save</button></td>
+
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Harvard</td>
+          <td>Cambridge, MA</td>
+          <td>$12,250</td>
+          <td>8.7%</td>
+          <td>113,630</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Football</td>
+          <td><button type="button" class="btn btn-primary">Save</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Stanford</td>
+          <td>Stanford, CA</td>
+          <td>$15,650</td>
+          <td>9.6%</td>
+          <td>16,914</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Key Club</td>
+          <td><button type="button" class="btn btn-primary">Save</button></td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Carnegie Melon</td>
+          <td>New York, NY</td>
+          <td>$12,340</td>
+          <td>12.3%</td>
+          <td>8.6 million</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Diversity Club</td>
+          <td><button type="button" class="btn btn-primary">Save</button></td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Yale</td>
+          <td>New Haven, CT</td>
+          <td>$12,540</td>
+          <td>18.2%</td>
+          <td>131,014</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Lacrosse</td>
+          <td><button type="button" class="btn btn-primary">Save</button></td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>The University of California</td>
+          <td>Los Angeles, CA</td>
+          <td>$14,050</td>
+          <td>16.4%</td>
+          <td>4 million</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Sports</td>
+          <td><button type="button" class="btn btn-primary">Save</button></td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>The University of Chicago</td>
+          <td>Chicago, IL</td>
+          <td>$10,050</td>
+          <td>12.1%</td>
+          <td>2.716 million</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Clubs</td>
+          <td><button type="button" class="btn btn-primary">Save</button></td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>The University of Ann Arbor</td>
+          <td>Ann Arbor, MI</td>
+          <td>$17,000</td>
+          <td>22.3%</td>
+          <td>121,477</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Fraternity, Club</td>
+          <td><button type="button" class="btn btn-primary">Save</button></td>
+        </tr>
+
+
+
+
+
+      </tbody>
+    </table>
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <hr>
+      <div class="footer-left">
+        <ul>
+          <a href="www.collegeblogresult.com"><ul>College Blog</ul></a>
+          <a href="www.collegegethelp.com"><ul>Ace your College Application</ul></a>
+          <a href="www.collegehowtochooseamajor.com"><ul>How To Choose a Major</ul></a>
+        </ul>
+      </div>
+      <div class="footer-center">
+        <ul id="footer-list-two">
+          <a href="www.twoyeardegreevs4yeardegree.com"><ul>Community College vs. University</ul></a>
+          <a href="www.collegeinstateoroutofstate.com"><ul>In State vs. Out of State</ul></a>
+        </ul>
+      </div>
+      <div class="footer-container">
+        <span>@2019 CollegeRank, Inc. All Rights Reserved</span>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
