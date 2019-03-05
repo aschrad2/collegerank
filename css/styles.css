@@ -103,3 +103,15 @@ h2 {
   text-align: left;
   margin-left: 30px;
 } */
+
+
+#college-ranking-table {
+  width: 75%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+#college-ranking-header {
+  margin-top: 3%;
+  margin-bottom: 0;
+}
