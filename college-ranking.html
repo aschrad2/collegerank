@@ -7,7 +7,9 @@
   <meta name="description" content="A web application to help you choose your college">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/styles.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> -->
+  <!-- https://datatables.net/manual/installation -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"><title>CollegeRank - Find the best college</title>
   </head>
   <body>
@@ -20,25 +22,25 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="college-ranking.html">Full Ranking</a>
+            <a class="nav-link" id="main-link1" href="college-ranking.html">Full Ranking</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="college-ranking.html">Business</a>
+            <a class="nav-link" id="main-link2" href="college-ranking.html">Business</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Health</a>
+            <a class="nav-link" id="main-link3" href="college-ranking.html">Psychology</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Social Sciences</a>
+            <a class="nav-link" id="main-link4" href="college-ranking.html">Computer Science</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Psychology</a>
+            <a class="nav-link" id="main-link5" href="college-ranking.html">Law</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Biology</a>
+            <a class="nav-link" id="main-link6" href="college-ranking.html">Nursing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Engineering</a>
+            <a class="nav-link" id="main-link7" href="college-ranking.html">Social Work</a>
           </li>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search Colleges..." aria-label="Search">
@@ -52,10 +54,13 @@
 
     <!-- ~~~~~~~~~~~~ Ranking Table ~~~~~~~~~~~~   -->
     <h1 id="college-ranking-header">College Ranking Table</h1>
-    <table class="table table-hover" id="college-ranking-table">
+
+      <!-- <thead> -->
+    <!-- <table class="table table-hover" id="college-ranking-table"> -->
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
       <thead>
         <tr>
-          <th scope="col">College Rank</th>
+          <th>College Rank</th>
           <th scope="col">Name</th>
           <th scope="col">Location</th>
           <th scope="col">Yearly Tuition</th>
@@ -72,14 +77,14 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
+          <th>1</th>
           <td>Massachusetts Institute of Technology</td>
           <td>Cambridge, MA</td>
-          <td>$11,900</td>
-          <td>6.1%</td>
+          <td>$20,000</td>
+          <td>0-10% </td>
           <td>113,630</td>
           <td>Yes</td>
-          <td>Yes</td>
+          <td>No</td>
           <td>Yes</td>
           <td>Yes</td>
           <td>Technology Team</td>
@@ -184,12 +189,26 @@
           <td>Fraternity, Club</td>
           <td><button type="button" class="btn btn-primary">Save</button></td>
         </tr>
-
-
-
-
-
       </tbody>
+
+      <tfoot>
+        <tr>
+          <th>College Rank</th>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Yearly Tuition</th>
+          <th>Acceptance Rate</th>
+          <th>City Population</th>
+          <th>Student Size</th>
+          <th>Business</th>
+          <th>Health</th>
+          <th>Engineering</th>
+          <th>Extracirriculars</th>
+          <th>Save?</th>
+        </tr>
+      </tfoot>
+
+
     </table>
 
 
