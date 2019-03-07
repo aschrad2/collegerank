@@ -126,3 +126,8 @@ h2 {
 thead input {
     width: 100%;
 }
+
+/* Drop down on hover, as opposed to click */
+.dropdown:hover>.dropdown-menu {
+ display: block;
+}
