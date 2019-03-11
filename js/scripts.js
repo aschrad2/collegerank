@@ -1,5 +1,3 @@
 $(document).ready(function() {
-    var table = $('#example').DataTable( {
-        fixedHeader: true
-    } );
+    $('#full-college-table').DataTable();
 } );
